@@ -7,7 +7,7 @@ A robust and real-time spam detection system that uses **NLP, ML, phishing URL c
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Spam/Ham Classification** using NLP (TF-IDF + Naive Bayes or DistilBERT)
 - 🔗 **Phishing URL Detection** via:
@@ -44,7 +44,7 @@ email_spam_detection/
 
 ---
 
-## 🧠 Model Overview
+## Model Overview
 
 | Module             | Description                                 | Dataset                      | Accuracy     |
 |--------------------|---------------------------------------------|-------------------------------|--------------|
@@ -54,7 +54,7 @@ email_spam_detection/
 
 ---
 
-## 📧 Example 1 (Ham)
+## Example 1 (Ham)
 ```
 Dear Spandana Gunaganti,
 
@@ -82,7 +82,7 @@ Infosys Ltd.
 
 ---
 
-## ⚠️ Example 2 (Spam)
+## Example 2 (Spam)
 ```
 Hello Spandana,
 
@@ -107,7 +107,7 @@ apple-support@icloud.com
 
 ---
 
-## 🖼️ Demo Outputs
+## Demo Outputs
 
 ![Screenshot 1](https://github.com/user-attachments/assets/a6ccd3f6-31b3-4aa5-a333-fff307b417f0)
 ![Screenshot 2](https://github.com/user-attachments/assets/0b9af67d-e51e-47ae-8752-ed31bd36f8f7)
@@ -148,7 +148,7 @@ python main.py
 
 ---
 
-## 📊 Datasets Used
+## Datasets Used
 
 | Dataset File                 | Description                                 | Size       |
 |-----------------------------|---------------------------------------------|------------|
@@ -161,7 +161,7 @@ python main.py
 
 ---
 
-## 🌐 APIs Used
+## APIs Used
 
 | API           | Purpose                        | Link                                  |
 |---------------|--------------------------------|---------------------------------------|
@@ -172,7 +172,7 @@ python main.py
 
 ---
 
-## 🚧 Future Improvements
+## Future Improvements
 
 - Web dashboard (Streamlit or Flask)
 - Email inbox scanning (IMAP)
@@ -181,15 +181,5 @@ python main.py
 
 ---
 
-## 🙌 Acknowledgements
-
-- Enron Dataset  
-- VirusTotal & PhishTank  
-- NumVerify & Truecaller APIs  
-- scikit-learn, pandas, nltk, requests
-
----
-
 ## 🧑‍💻 Author
-
-Built with ❤️ by **Spandana Gunaganti**
+**Spandana Gunaganti**
