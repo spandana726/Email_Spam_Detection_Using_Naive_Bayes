@@ -1,15 +1,15 @@
 
-# 📧 Advanced Email Spam & Phishing Detection System 🛡️
+# 📧 Advanced Email Spam Detection System 🛡️
 
 A robust and real-time spam detection system that uses **NLP, ML, phishing URL classifiers, and phone number verification APIs** to analyze email content and **accurately detect spam, phishing links, and fraud phone numbers**.
 
-> ✅ Achieves **>95% accuracy** using real-world datasets and integrates APIs like **VirusTotal, PhishTank, and Truecaller**.
+> Achieves **>95% accuracy** using real-world datasets and integrates APIs like **VirusTotal, PhishTank, and Truecaller**.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ **Spam/Ham Classification** using NLP (TF-IDF + Naive Bayes or DistilBERT)
+- **Spam/Ham Classification** using NLP (TF-IDF + Naive Bayes or DistilBERT)
 - 🔗 **Phishing URL Detection** via:
   - ML-trained phishing classifier (`urlset_clean.csv`)
   - [✔️ VirusTotal API](https://virustotal.com)
@@ -17,9 +17,9 @@ A robust and real-time spam detection system that uses **NLP, ML, phishing URL c
 - 📞 **Phone Number Detection and Verification** using:
   - Regex-based number extraction
   - [✔️ NumVerify API](https://numverify.com/) or Truecaller API
-- 🧠 **Text Preprocessing**: Lowercasing, stopword removal, tokenization
-- 🧪 **Real-Time Terminal Input Support**
-- 📊 **Confidence Score** on classification output
+- **Text Preprocessing**: Lowercasing, stopword removal, tokenization
+- **Real-Time Terminal Input Support**
+- **Confidence Score** on classification output
 
 ---
 
@@ -47,7 +47,7 @@ email_spam_detection/
 
 ---
 
-## 🧠 Model Overview
+## Model Overview
 
 | Module             | Description                                 | Dataset                      | Accuracy     |
 |--------------------|---------------------------------------------|-------------------------------|--------------|
@@ -57,22 +57,30 @@ email_spam_detection/
 
 ---
 
-## 🧪 Example Email (Ham)
+## 1st Example Email (Ham)
 ```
-Subject: Your Razorpay Statement for June
+Dear Spandana Gunaganti,
 
-Dear Meghana,
-Your June payment summary is ready.
+We are pleased to inform you that you have been shortlisted for the Software Engineer role at Infosys.  
+Your application has successfully passed the initial screening.
 
-Total Transactions: ₹3,45,230  
-Settlement: ₹3,30,980  
-Refunds: ₹2,150
+📅 Interview Date: Monday, July 15, 2025  
+🕐 Time: 11:00 AM IST  
+📍 Mode: Virtual – Microsoft Teams
 
-📎 Download: https://razorpay.com/statement
+🔗 Joining Link (will be active 10 mins before session):  
+https://teams.microsoft.com/l/meetup-join/infosys/candidate/July15
 
-Thanks,  
-Team Razorpay
-```
+Please ensure you are in a quiet location with a stable internet connection.  
+Also, keep your resume, government ID proof, and academic transcripts handy during the interview.
+
+For any assistance, feel free to contact us at hr@infosys.com or 📞 1800-123-4567.
+
+We look forward to meeting you.
+
+Warm Regards,  
+Recruitment Team  
+Infosys Ltd.
 
 💡 Output:
 ```
@@ -80,9 +88,38 @@ Team Razorpay
 📈 Confidence: 97.25%
 ```
 
----
+## 2nd Example Email (Spam)
+```
+Hello Spandana,
 
-## 🛠️ How to Run
+Your Apple ID was used to purchase a new iPhone 15 Pro Max – 256GB for ₹87,999 on July 9, 2025.  
+Device: iPhone 15 Pro Max  
+Location: Indore, India  
+IP Address: 182.77.120.53
+
+If you did not authorize this transaction, you must secure your account immediately to prevent further charges.
+
+👉 Cancel Transaction: https://apple-secure-login.support-id-verification.com  
+(Note: This link expires in 30 minutes)
+
+Failure to verify within the next 30 minutes will result in permanent charge on your card ending in 1823.  
+For support, call us at 📞 +91-9898989898.
+
+Apple Support  
+apple-support@icloud.com
+
+
+💡 Output:
+```
+🔎 Result: Spam  
+📈 Confidence: 95.75%
+```
+**Demo Outputs**
+![Screenshot 2025-07-09 004516](https://github.com/user-attachments/assets/a6ccd3f6-31b3-4aa5-a333-fff307b417f0)
+![Screenshot 2025-07-09 004245](https://github.com/user-attachments/assets/0b9af67d-e51e-47ae-8752-ed31bd36f8f7)
+![Screenshot 2025-07-09 003843](https://github.com/user-attachments/assets/ed16fb97-006d-4b88-a572-f28b28bcb07a)
+
+## How to Run
 
 ### 🔹 1. Clone the repo
 ```bash
@@ -119,21 +156,7 @@ python main.py
 
 ---
 
-## 💡 Sample Output
-
-```
-📧 Enter email content:
-Hi Meghana,  
-View payment details: https://secure-payments-check.info  
-Call +91-9988771122 for support
-
-🔎 Result: Spam  
-📈 Confidence: 94.89%
-```
-
----
-
-## 📦 Datasets Used
+## Datasets Used
 
 | Dataset File                 | Description                                 | Size       |
 |-----------------------------|---------------------------------------------|------------|
@@ -146,7 +169,7 @@ Call +91-9988771122 for support
 
 ---
 
-## 🔒 APIs Used
+## APIs Used
 
 | API           | Purpose                        | Link                                  |
 |---------------|--------------------------------|---------------------------------------|
@@ -157,23 +180,14 @@ Call +91-9988771122 for support
 
 ---
 
-## ✅ Future Improvements
+## Future Improvements
 
 - Web dashboard (Streamlit or Flask frontend)
 - Email inbox scanning support (IMAP integration)
 - BERT-based spam + URL joint models
 - Real-time threat feed integration
 
----
-
-## 📄 License
-
-This project is open-sourced under the **MIT License**.  
-Feel free to fork, modify, and use it for learning or security research.
-
----
-
-## 🙌 Acknowledgements
+## Acknowledgements
 
 - Enron Email Dataset
 - VirusTotal & PhishTank APIs
@@ -184,5 +198,4 @@ Feel free to fork, modify, and use it for learning or security research.
 
 ## 🔗 Connect
 
-Built with ❤️ by [Gunaganti Spandana]  
-If you liked this, ⭐️ the repo or contribute!
+Built with [Gunaganti Spandana]  
