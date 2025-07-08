@@ -88,7 +88,7 @@ Infosys Ltd.
 📈 Confidence: 97.25%
 ```
 
-## 2nd Example Email (Spam)
+**## 2nd Example Email (Spam)**
 ```
 Hello Spandana,
 
